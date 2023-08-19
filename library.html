@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel="stylesheet" type="text/css" href="styles.css">  
+
+<title>Library</title>
+
+</head>
+
+<body>
+   
+
+    <nav>
+        <ul id="horizontal-menu">
+        <li><a href="index.html" >Your Wyrm</a></li>
+        <li><a href="library.html" class="active">Library</a></li>
+        <li><a href="bookshelf.html">Bookshelf</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </nav>
+    <script>  
+        function chkBook() {  
+        var mylist = document.getElementById("libraryList");  
+        document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;  
+        }  
+        </script>
+
+        <script>
+            function myFunction(imgs) {
+                var expandImg=document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgText");
+                expandImg.src = imgs.src;
+                imgText.innerHTML=imgs.alt;
+                expandImg.parentElement.style.display ="block";
+            }
+        </script>
+
+    <body>  
+        <div class ="row">
+            <div class ="column">
+                <img src="Images/35959740-2.jpg" alt="Circe by Madieline Miller" onclick="myFunction(this);">
+            </div>
+        
+        <div class ="column">
+                <img src="Images/Count of Monte Cristo.jpeg" alt="The Count of Monte Cristo by Alexandre Dumas" onclick="myFunction(this);">
+            </div>
+        <div class="column">
+            <img src="Images/Jade War.jpg" alt="Jade War by Fonda Lee" onclick="myFunction(this);">
+        </div>
+        </div>
+
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="clostbtn">&times;</span>
+        </div>
+        <p>You have Checked Out:</p>
+        <img id="expandedImg" style="width:10%">
+
+        <div id="imgText"></div>
+    </div>
+
+        
+        
+       
+    
+</body>
+</html>

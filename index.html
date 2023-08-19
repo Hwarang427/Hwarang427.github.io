@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+<meta charset="utf-8">   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<title>Your Wyrm</title>
+
+</head>
+
+<body>
+    
+    <!--Basic Navigation Area-->
+    <nav>
+        <ul id="horizontal-menu">
+        <li><a href="index.html" class="active">Your Wyrm</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="bookshelf.html">Bookshelf</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </nav>
+    <!--Creates the General Play area for the Pet, Simple Worm Icon, buttons, and Boxes-->
+    <div class="mainWyrmBox">
+        <div class ="wyrmBoxSingular" id="wyrmBoxSingular">
+            <input type="text" class ="wyrmName" placeholder="Name your Wyrm!"></input>
+            <img  src=Images/BookWyrms.png id="wyrmIcon" class="wyrmIcon">
+            <div class="wyrmObjects">
+                <label for = "objectLvlPlay" class="objectNames" id="objectPlay">Boredom</label>
+                    <progress class ="objectLevels" id="objectLvlPlay" max="100" value="60">60%</progress>
+                <label for="objectLvlHunger" class="objectNames" id="objectHunger">Hunger</label>
+                    <progress class="objectLevels" id="objectLvlHunger" max="100" value="60">60%</progress>
+                <label for="objectLvlThirst" class="objectNames" id="objectThirst">Thirst</label>
+                    <progress class="objectLevels" id="objectLvlThirst" max="100" value="60">60%</progress>
+            </div>
+            <button type="Submit" class="objectButtons" id="buttonPlay">Play(20 Pages)</button>
+            <button type="Submit" class="objectButtons" id="buttonFeed">Feed(10 Pages)</button>
+            <button type="Submit" class="objectButtons" id="buttonGiveWater">Give Water(5 Pages)</button>
+        </div>
+    </div>
+    <script src="interact.js"></script>
+</body>
+</html>
